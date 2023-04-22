@@ -1,4 +1,4 @@
-import { UsuarioModel } from "../models/usuarios.model.js";
+import { UsuarioModel } from "../models/usuarios.models.js";
 
 export const registroUsuario = async (req, res) => {
   const data = req.body;
