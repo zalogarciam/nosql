@@ -20,6 +20,7 @@ server.listen(PORT, () => {
   console.log(`Server running ... port: ${PORT}`);
 });
 
+connectDB();
 function connectDB() {
   mongoose
     .connect(process.env.MONGODB_URI)
