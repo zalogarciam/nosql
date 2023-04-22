@@ -1,6 +1,6 @@
 import { EventoModel } from "../models/eventos.models.js";
 import { UsuarioModel } from "../models/usuarios.models.js";
-// import { subirImagenes } from "../utils/s3.js";
+import { subirImagenes } from "../utils/s3.js";
 
 export const crearEvento = async (req, res) => {
   // TODO: ya no vamos a recibir el usuario por el body, ahora el usuario vendra por el req.user
@@ -35,11 +35,11 @@ export const crearEvento = async (req, res) => {
   }
 };
 
-// export const probarS3 = async (req, res) => {
-//   const resultado = await subirImagenes("");
-//   console.log(resultado);
+export const probarS3 = async (req, res) => {
+  const resultado = await subirImagenes("");
+  console.log(resultado);
 
-//   res.json({
-//     message: "Archivo subido exitosamente",
-//   });
-// };
+  res.json({
+    message: "Archivo subido exitosamente",
+  });
+};
